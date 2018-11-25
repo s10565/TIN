@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+        form(action='/formdata', method='post')
+          input(name='name', type='text', placeholder='Podaj imię', required='')
+          br
+          input(name='age', type='number', placeholder='Podaj wiek', required='')
+          br
+          input(name='city', type='text', placeholder='Podaj miasto', required='')
+          br
+          input(type='submit', value='Prześlij')
+          input(type='reset', value='Resetuj')
+        if error
+          p= error

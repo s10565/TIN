@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(charset='utf-8')
+  body
+    nav#myNav
+      a.navButton(href="/") Home
+      a.navButton(href="/todo") TO-DO List
+      a.navButton(href="/profile") Profile
+      a.navButton(href="/logout") Logout
+    block content

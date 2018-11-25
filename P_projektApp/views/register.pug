@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  div
+    form.formcss(action='/register', method='post')
+      h1.formtitle Registration
+      br
+      input.forminput(name='username', type='text', placeholder='login', required='true')
+      br
+      input.forminput(name='usermail', type='mail', placeholder='mail', required='true')
+      br
+      input.forminput(name='password', type='password', placeholder='password', required='true')
+      br
+      input.forminput(name='rePassword', type='password', placeholder='confirm password', required='true')
+      br
+      if error
+        p.formmsg= error
+      input.formbutton(type='submit', value='Submit')
+      input.formbutton(type='reset', value='Reset')
+      p Already have account? Login 
+        a(href='/login') here

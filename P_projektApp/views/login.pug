@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  div
+    form.formcss(action='/login', method='post')
+      h1.formtitle Login
+      br
+      input.forminput(name='username', type='text', placeholder='login', required='true')
+      br
+      input.forminput(name='password', type='password', placeholder='password', required='true')
+      br
+      if error
+        p.formmsg= error
+      input.formbutton(type='submit', value='Submit')
+      p Don't have account? Register 
+        a(href='/register') here 

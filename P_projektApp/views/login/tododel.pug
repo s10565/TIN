@@ -1,0 +1,46 @@
+extends layout
+
+block content
+  div.content
+    div.todobuttonarea
+      button.todobutton(type='button', onclick='displaytodo()') TODO
+      button.todobutton(type='button', onclick='displaydone()') DONE
+    div.todocontent(id='todocontent', style='display: none')
+      form(action='/todo', method='post')
+        input.todoinput(name='name', type='text', placeholder='New task name...', required='true') 
+        input.todoadd(value='Add', type='submit')
+        if error
+          p= error
+
+      table.todotable
+        tbody
+        each task in todoList
+          tr
+            td.todocell= task.name
+            td
+              form(action='/todoupd', method='post')
+                input(name='id', type='hidden', placeholder='id', value=task._id, required='true')
+                input.tododone(type="submit", value='DONE')
+     
+    div.todocontent(id='donecontent')
+      h1 Done tasks
+      table.todotable
+        tbody
+        each task in doneTodoList
+          tr
+            td.todocell= task.name
+            td
+              form(action='/tododel', method='post')
+                input(name='id', type='hidden', value=task._id, required='true')
+                input.tododel(type="submit", value='DELETE')
+
+  script.
+    function displaytodo() {
+      document.getElementById("todocontent").style.display = "block";
+      document.getElementById("donecontent").style.display = "none";
+    }
+
+    function displaydone() {
+      document.getElementById("todocontent").style.display = "none";
+      document.getElementById("donecontent").style.display = "block";
+    }
