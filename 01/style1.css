@@ -1,0 +1,40 @@
+body {
+    font-size: 14px;
+}
+
+h3 {
+    font-size: 2em;
+	text-transform: uppercase;
+	font-style: bold;
+	color: navy;
+	font: arial;
+}
+
+p {
+	color: blue;
+	font-style: normal;
+}
+
+strong {
+    font-style: italic, bold;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+a {
+	text-decoration: none;
+}
+
+ol {
+	list-style-type: upper-roman;
+}
+
+ul {
+	list-style-type: square;
+}

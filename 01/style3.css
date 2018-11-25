@@ -1,0 +1,22 @@
+img {
+    float: left;
+	margin: 4px;
+}
+
+.container {
+	width: 100%;
+	margin: 5px;
+ }
+ 
+.content {
+	background-color: #f1f1f1;
+	display: inline-block;
+	width: 50%;
+ }
+ 
+.sidebar {
+	background-color: #bab4b4;
+	display: inline-block;
+	width: 50%;
+	float: right;
+ }

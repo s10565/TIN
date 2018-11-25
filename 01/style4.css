@@ -1,0 +1,56 @@
+body {
+	background-color: #ede6e6;
+}
+
+.center {
+    margin: auto;
+    width: 90%;
+	background-color: #bab4b4;
+	padding: 5px;
+}
+
+.banner {
+    margin: auto;
+    width: 60%;
+	height: 300px;
+    border: 3px solid green;
+}
+
+.title {
+	font-size: 33px;
+	margin: 25px;
+	text-decoration: underline;
+	color: navy;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.news {
+	margin: 45px;
+	border: 2px solid black;
+	background-color: #e8e68b;
+	padding: 10px;
+	color: black;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 14px;
+	height: 100%;
+}
+
+a:hover {
+    color: blue;
+}
+
+.icon{
+	height: 30px;
+	width: 30px;
+}
+
+.fit {
+	width: 100%;
+	height: 100%;
+}
+
+.floatright{
+	float: right;
+	
+	
+	
