@@ -1,0 +1,4 @@
+var lorem = "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a metus auctor, vehicula odio vel, suscipit neque. Sed id erat egestas, fringilla mi at, scelerisque leo. Sed tellus felis, ultricies ac pellentesque quis, maximus nec odio. In vestibulum ligula aliquet accumsan auctor. Curabitur dignissim condimentum ullamcorper. Nam vitae ex sed neque ullamcorper consectetur a id velit. Mauris suscipit mi odio, sit amet porta dui viverra id. Vivamus id mattis lorem. Duis eu nisl in dui auctor aliquet malesuada et sem. Curabitur malesuada arcu mattis nisl pretium bibendum. Phasellus eu mattis purus, eu molestie eros. </p>";
+window.onload=function() {
+	setTimeout(function() {document.getElementById("show").innerHTML =lorem}, 5000);
+};

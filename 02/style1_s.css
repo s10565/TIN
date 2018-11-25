@@ -1,0 +1,65 @@
+.flex-container{
+	display: flex;
+	flex-direction: column;
+}
+
+.header {
+	padding:10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	text-align: center;
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: navy;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	height: 260px;
+	box-shadow: 10px 10px black;
+	border-radius: 15%;
+	transform: rotate(5deg);
+}
+
+.footer {
+	bottom:0;
+    text-align: center;
+}
+
+.maincontent {
+	padding:10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.gallery {
+	margin: 10px;
+	order: 2;
+}
+
+.topic {
+	margin: 10px;
+	column-count: 1;
+	order: 1;
+}
+
+.textpic {
+	float: left;
+	margin: 4px;
+}
+
+.pullquote {
+    float: left;
+	font-weight: bold;
+	color: red;
+	margin: 5px;
+	width: 100px;
+}
+
+blockquote {
+	margin: 0;
+}

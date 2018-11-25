@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TIN - 4.1</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="scripts\style.css">
+</head>
+<body>
+***********************<b>Zadanie 1</b>***********************
+<p>Napisz funkcję JS konwertującą temperatury między skalami Celsjusza i Fahrenheita (https://en.wikipedia.org/wiki/Fahrenheit), plus formularz przyjmujący dane do konwersji i wypisujący wynik.</p>
+
+<br>Stopnie Celsjusza:<input id="cel" onkeyup="convert('c')">
+<br>Stopnie Fahrenheita:<input id="far" onkeyup="convert('f')">
+<br>
+<br>*Jako separator jedności i części proszę używać znaku kropki (".")*<br>
+<script type="text/javascript" src="scripts\converter.js"></script>
+
+<br>***********************<b>Zadanie 2</b>***********************
+<p>Napisz funkcję JS dodającą akapit tekstu do strony po 5 sekundach od jej otwarcia</p>
+<div id="show"><b>Tutaj po 5 sekundach pojawi się tekt!</b></div>
+<script src="scripts\showText.js"></script>
+
+<br>***********************<b>Zadanie 3</b>***********************
+<p>Napisz funkcję JS dodającą wiersz do tabelki HTML w oparciu o dane wprowadzone na formularzu umieszczonym na tej samej stronie</p>
+<div>
+<table  id="jsTable"><td></td></table>
+<input id="rowForm" > <button onclick="addRowByForm()">Dodaj</button>
+</div>
+<script src="scripts\addRows.js"></script>
+
+<br>***********************<b>Zadanie 4</b>***********************
+<p>Napisz funkcję JS walidującą zawartość formularza – formularz powinien mieć przynajmniej jedno obowiązkowe pole numeryczne i jedno pole do sprawdzenia wyrażeniem regularnym (np. e-mail). W razie nie przejścia walidacji przez pole wyświetl odpowiednie informacje by poinformować użytkownika. Jeśli walidacja jest nieudana, funkcja powinna zwracać false, w przeciwnym wypadku true</p>
+<div>
+Podaj imię: <input id="nameForm"> <b id="nameMsg"></b>
+<br>Podaj wiek: <input id="ageForm"> <b id="ageMsg"></b>
+<br>Podaj mail: <input id="mailForm"> <b id="mailMsg"></b>
+<br><button onclick="document.getElementById('valid').innerHTML = validate()">Prześlij</button>
+<br>Validation: <span id="valid"> 
+</div>
+<script src="scripts\formValidator.js"></script>
+
+<br>***********************<b>Zadanie 5</b>***********************
+<p>Stwórz klasę Student. Student powinien być opisywany imieniem, nazwiskiem, id i tablicą zawierającą oceny oraz metodą liczącą średnią ocen. Stwórz plik HTML z formularzem pozwalającym na wprowadzenie/edycję danych studenta (wystarczy obsłużyć pojedynczy obiekt), drugi formularz pozwalający na dodawanie ocen do tablicy i obszar, w którym wyświetlane są dane i oceny studenta + średnią ocen. Po każdej modyfikacji danych/dopisaniu oceny aktualizuj wyświetlane informacje.
+<div><p>
+<b>Dane studenta:</b><br>
+<span id="sName">
+</p></div>
+
+<div><p>
+<b>Edycja danych:</b><br>
+<input id="newName"> <b id="newNameMsg"><- Imie</b><br> 
+<input id="newLastName"> <b id="newLastNameMsg"> <- Nazwisko</b><br>
+<input id="newIndex"> <b id="newIndexMsg"> <- indeks</b><br>
+<button onclick="student.changeInfo()">Zmień dane</button>
+</p></div>
+
+<div><p>
+<b>Dodaj ocenę:</b>
+<input id="newGrade"> <button onclick="student.addGrade()">Dodaj</button>
+<br><b id="newGradeMsg"></b>
+</p></div>
+
+<script src="scripts\Student.js"></script>
+
+</body>
+</html>

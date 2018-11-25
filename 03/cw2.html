@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TIN - 3.2</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<p>a)	Funkcja licząca silnię zadanej liczby – dwie implementacje, jedna rekurencyjna, druga przy użyciu iteracji.<br>Zaimplementuj funkcję rekurencyjną przy pomocy wyrażenia (function expression), iteracyjną przy pomocy deklaracji (function declaration)
+<script type="text/javascript" src="scripts/a.js"></script><br>
+<button onclick="document.getElementById('silnia1').innerHTML = silnia_iter(6)">Iteracja:</button> 6!=<span id="silnia1"></span><br>
+<button onclick="document.getElementById('silnia2').innerHTML = silnia_rek(6)">Rekurencja:</button> 6!=<span id="silnia2"></span>
+<br><a href="scripts/a.js">a.js</a>
+</p>
+
+<p>b)	Funkcja licząca n-ty numer w ciągu Fibonacciego
+<script type="text/javascript" src="scripts/b.js"></script>
+<br><button onclick="document.getElementById('fibo').innerHTML = fibonacci(6)">Wynik ciągu Fibonacciego dla 6:</button> <span id="fibo"></span>
+<br><a href="scripts/b.js">b.js</a></p>
+
+<p>c)	Funkcja sprawdzająca, czy przekazany ciąg jest palindromem
+<script type="text/javascript" src="scripts/c.js"></script>
+<br><button onclick="document.getElementById('palindrom').innerHTML = palindrome('Step on no pets')">Czy "Step on no pets" jest palindromem?</button> <span id="palindrom"></span>
+<br><a href="scripts/c.js">c.js</a></p>
+
+<p>d)	Funkcja zwracająca litery z zadanego ciągu w kolejności alfabetycznej
+<br>Przykładowy string : 'webmaster' 
+<br>oczekiwane wyjście : 'abeemrstw'
+<script type="text/javascript" src="scripts/d.js"></script>
+<br><button onclick="document.getElementById('aplphabetical').innerHTML = alphabetical('webmaster')">Try it - 'webmaster'</button> Outcome: <span id="aplphabetical"></span>
+<br><a href="scripts/d.js">d.js</a></p>
+
+<p>e)	Funkcja przyjmująca ciąg jako parameter i zwracająca najdłuższe słowo w ciągu
+<script type="text/javascript" src="scripts/e.js"></script>
+<br><button onclick="document.getElementById('najdluzsze').innerHTML = longestWord('Funkcja przyjmująca ciąg jako parameter i zwracająca najdłuższe słowo w ciągu')">Najdłuższe słowo z ciągu: [Funkcja przyjmująca ciąg jako parameter i zwracająca najdłuższe słowo w ciągu] to:</button> <span id="najdluzsze"></span>
+<br><a href="scripts/e.js">e.js</a></p>
+
+<p>f)	Funkcja sprawdzająca, czy zadana liczba jest liczbą pierwszą
+<script type="text/javascript" src="scripts/f.js"></script>
+<br><button onclick="document.getElementById('prime').innerHTML = isPrime(37)">Is 37 a prime?</button> <span id="prime"></span>
+<br><a href="scripts/f.js">f.js</a></p>
+
+<p>g)	Funkcja zwracająca typ otrzymanego parametru<br>
+<script type="text/javascript" src="scripts/g.js"></script>
+<button onclick="document.getElementById('type1').innerHTML = type_of_arg('text')">What type is 'text'?</button> <span id="type1"></span><br>
+<button onclick="document.getElementById('type2').innerHTML = type_of_arg(100)">What type is 100?</button> <span id="type2"></span>
+<br><a href="scripts/g.js">g.js</a></p>
+
+<p>h)	Funkcja przyjmująca tablicę liczb i znajdująca drugą najmniejszą i drugą największą wartość<br>
+<script type="text/javascript" src="scripts/h.js"></script>
+<button onclick="document.getElementById('zadh').innerHTML = getSecondsNumbers([25,10,5,2,1])">Oblicz</button> getSecondsNumbers([25,10,5,2,1])=<span id="zadh"></span>
+<br><a href="scripts/h.js">h.js</a></p>
+
+<p>i)	Funkcja podająca monety, przy pomocy których powinna być wydana konkretna kwota przy użyciu zadanych nominałów
+Przykładowe wywołanie: amountTocoins(46, [25, 10, 5, 2, 1])<br>
+Kwota to 46, dostępne nominały to 25, 10, 5, 2, 1.<br>
+Wyjście: 25, 10, 10, 1<br>
+<script type="text/javascript" src="scripts/i.js"></script>
+<button onclick="document.getElementById('zadi').innerHTML = amountTocoins(46, [25, 10, 5, 2, 1])">Oblicz</button> amountTocoins(46, [25, 10, 5, 2, 1])=<span id="zadi"></span>
+<br><a href="scripts/i.js">i.js</a></p>
+
+<p>j)	Binary search w zadanej tablicy<br>
+<script type="text/javascript" src="scripts/j.js"></script>
+<button onclick="document.getElementById('zadj').innerHTML = binarySearch([25, 10, 5, 2, 1], 5)">Oblicz</button> binarySearch([25, 10, 5, 2, 1], 5)=<span id="zadj"></span>
+<br><a href="scripts/j.js">j.js</a></p>
+
+<p>k)	Stwórz obiekt przy pomocy inicjalizatora (object initializer), obiekt powinien mieć przynajmniej 2-3 pola i 2-3 metody. Napisz funkcję przyjmującą obiekt jako parametr i wypisującą wszystkie jego własności wraz z ich typami
+<script type="text/javascript" src="scripts/k.js"></script>
+<br><b>Wyniki są wypisywane na konsoli</b>
+<br><a href="scripts/k.js">k.js</a></p>
+
+<p>l)	Napisz funkcje konstruktora, tworzącą obiekty reprezentujące studentów – mają zawierać imię, nazwisko, nr indeksu, tablicę z ocenami i metodę wypisującą imię, nazwisko i średnią ocen
+<script type="text/javascript" src="scripts/l.js"></script>
+<br><b>Wyniki są wypisywane na konsoli</b>
+<br><a href="scripts/l.js">l.js</a></p>
+	
+<p>m)	Stwórz prototyp obiektu reprezentującego studenta przy pomocy inicjalizatora – obiekt ma zawierać tablicę z listą przedmiotów z programu studiów, przygotuj funkcję tworzącą nowe obiekty na podstawie prototypu, ustawiającą im własności imię, nazwisko i nr indeksu 
+<script type="text/javascript" src="scripts/m.js"></script>
+<br><b>Wyniki są wypisywane na konsoli</b>
+<br><a href="scripts/m.js">m.js</a></p>
+
+</body>
+</html>
